@@ -64,7 +64,7 @@ class _TapDebouncerState extends State<TapDebouncer> {
           return widget.builder(
             context,
             widget.onTap == null
-                ? (){}
+                ? () async {}
                 : () async {
                     await _tapDebouncerHandler.onTap(
                       () async {
